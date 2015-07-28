@@ -146,3 +146,19 @@ EXTENDED_FONT_FOOTPRINT := true
 MALLOC_IMPL := dlmalloc
 
 -include vendor/lge/mako/BoardConfigVendor.mk
+
+#Options for Optimizations (Some only work with Sabermod Toolchains)
+
+export USE_HOST_4_8 := true
+export GRAPHITE_OPTS := true
+export STRICT_ALIASING := true
+export USE_O3_OPTIMIZATIONS := true
+export KRAIT_TUNINGS := true
+export ENABLE_GCCONLY := true
+export TARGET_USE_PIPE := true
+export FLOOP_NEST_OPTIMIZE := true
+export FFAST_MATH := true
+export ENABLE_GOMP := false
+export ENABLE_SANITIZE := false
+export ENABLE_ARM_MODE := false
+export ENABLE_PTHREAD := false
